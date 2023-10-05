@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    height: 600px;
+    margin: 20px auto;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* Cuando al alemento no se le da una altura definida, ocupa doto el alto. Por defecto tiene la propiedad aling-items: stretch; */
+.item {
+    width: 400px;
+    height: 100px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.item1 {
+    background: steelblue;
+}
+
+.item2 {
+    background: crimson;
+}
+
+.item3 {
+    background: darkcyan;
+}
+
+.item4 {
+    background: darkmagenta;
+}
+
