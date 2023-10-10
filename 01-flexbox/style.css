@@ -4,27 +4,31 @@
     box-sizing: border-box;
 }
 
+/* Las propiedades display, flex-direction y flex-wrap solamente van a ser válidas en el container */
 .container {
-    width: 90%;
+    width: 502px;
     height: 600px;
     margin: 20px auto;
     border: 1px solid #000;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
 }
 
-/* Cuando al alemento no se le da una altura definida, ocupa doto el alto. Por defecto tiene la propiedad aling-items: stretch; */
+/* Cuando al alemento no se le da una altura definida, ocupa todo el alto. Por defecto tiene la propiedad aling-items: stretch; */
 .item {
-    width: 400px;
+    flex: 1 0 100px;
     height: 100px;
     text-align: center;
     color: #fff;
     font-size: 30px;
+    flex-shrink: 1;
 }
 
 .item1 {
     background: steelblue;
+    height: auto;
+    align-self: stretch;
 }
 
 .item2 {
