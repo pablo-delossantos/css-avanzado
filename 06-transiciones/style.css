@@ -1,0 +1,21 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background: deepskyblue;
+    position: relative;
+    transition-property: transform background;
+    /* transition-property: transform background; Sirve para decir que propiedad va a tener una transición*/
+    transition-duration: 5s;
+}
+
+.caja{
+    width: 500px;
+    background: #000;
+    height: 300px;
+}
+
+.caja:hover .box{
+    transform: scale(1.2);
+}
+
+/* Las propieadades inline no se pueden animar */
