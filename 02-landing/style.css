@@ -17,6 +17,7 @@ body {
 nav {
     height: 70px;
     background: #143d64;
+    animation: moverNav 1s ease-out;
 }
 .nav-content {
     height: 100%;
@@ -37,6 +38,7 @@ nav {
 .ilustracion {
     flex-basis: 50%;
     width: 50%;
+    animation: moverImagen 1s ease-in-out;
 }
 .contenedor-textos{
     flex-basis: 45%;
@@ -44,6 +46,7 @@ nav {
 .titulo{
     font-size: 48px;
     font-weight: 700;
+    animation: moverTexto 1s ease-in-out;
 }
 .copy {
     margin: 20px 0;
@@ -93,5 +96,23 @@ nav {
     }
     .copy{
         font-size: 20px;
+    }
+}
+
+@keyframes moverImagen {
+    0% {
+        transform: translate(100%, 100%);
+    }
+}
+
+@keyframes moverTexto {
+    0% {
+        transform: translate(-100%);
+    }
+}
+
+@keyframes moverNav {
+    0% {
+        transform: translate(0%, -100%);
     }
 }
