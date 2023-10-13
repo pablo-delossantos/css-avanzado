@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:0;
+}
+
+
+
+body{
+    background: #fff;
+}
+.caja{
+    background: coral;
+    width:100%;
+    height: 600px;
+    position: relative;
+    /* margin-bottom: 10px; */
+    /* top:0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    /* position:
+        relative
+        absolute
+        fixed
+        sticky */
+}
+
+header{
+    background: coral;
+    width:100%;
+    height: 600px;
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* .hijo{
+    background: #000;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    right: 0;
+} */

@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: #6951d6;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+}
+.caja{
+    width: 300px;
+    height: 300px;
+    background: coral;
+    margin-bottom: 30px;
+    position: relative;
+    /* z-index: 2; */
+}
+
+.elemento-top{
+    margin-top: 70px;
+}

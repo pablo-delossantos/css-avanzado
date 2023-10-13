@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: coral;
+    font-size: 30px;
+    color:#FFF;
+    font-family: 'verdana';
+    text-align: center;
+    margin:50px;
+    
+    /* transform: translate(200px,200px); | translateY() | translateX() */
+    /* transform: scale(2); | scaleY()  | scaleX() */
+    /* transform: skew(180deg); | skewY() | skewX() */
+    /*  transform: rotate(60deg);*/
+    /* deg 360  */
+    /* grad 400 */
+    /* rad 6.38 */
+    /* turn 1 */
+    transition: all 1s;
+}
+
+
+.box:hover{
+    transform: rotate(60deg);
+}

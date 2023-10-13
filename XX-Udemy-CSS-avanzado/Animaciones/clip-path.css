@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    background: coral;
+    margin: 100px;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.box:hover{
+    transition: all 1s;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}

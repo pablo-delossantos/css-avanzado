@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 300px;
+    /* Shorthand */
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: moverDerecha 1s ease-out  ;
+
+
+    /* animation-name: moverDerecha; */
+    /* animation-duration: 1s; Es la duracion de la animacion */
+    /* animation-iteration-count: infinite; Es las veces que se repite | infinite | */
+    /* animation-timing-function: ease | ease-in | ease-out | ease-in-out | linear; */
+    /* animation-direction: Nos dice como se ejecutará la animación normal| reverse | alternate | alternate-reverse ; */
+    /* animation-play-state: paused | running; */
+    /* animation-delay: 1s; */
+    /* animation-fill-mode: forwards; */
+}
+
+@keyframes moverDerecha{
+    0%{
+        transform: translate(-100%, 200px);
+        background: #000;
+
+    }
+
+}

@@ -1,0 +1,58 @@
+    /* transition-timing-function: ease; */
+    /* ease | ease-in | ease-out | ease-in-out | linear */
+    /* transition-delay: 0s;  Nos dirá cuanto tarda la animación en ejecutarse*/
+    /* transition-property: transform background;  Sirve para decir que propiedad va a tener una transición */
+    /* transition-duration: 5s; Cuanto tiempo durará la transición */
+
+img{
+    transition-property: transform;
+    transition-duration: 3s;
+    width: 170px;
+    display: block;
+}
+
+.uno{
+    transition-timing-function: ease;
+}
+.dos{
+    transition-timing-function: ease-in;
+}
+.tres{
+    transition-timing-function: ease-out;
+}
+.cuatro{
+    transition-timing-function: ease-in-out;
+}
+.cinco{
+    transition-timing-function: linear;
+}
+
+body:hover img{
+    transform: translate(400px);
+}
+
+
+
+/* Segunda parte */
+
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 100px;
+    background: deepskyblue;
+    /* transition: property duration delay timing-function */
+    transform: translate(0);
+    position: relative;
+    left: 0;
+    transition: transform 1s 1s,
+                left 1s 0s ;
+    transition-timing-function: cubic-bezier(.05,.67,.02,.98);
+}
+
+body:active .box{
+    transform: scale(2);
+    left: 300px;
+}
+
+/* :hover ---> cuando el mouse se pone sobre el elemento */
+/* :active ---> cuando se le da click al elemento */

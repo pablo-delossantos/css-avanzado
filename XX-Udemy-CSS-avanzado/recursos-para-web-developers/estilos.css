@@ -1,0 +1,27 @@
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+h2{
+    font-weight: 300;
+    font-size: 60px;
+}
+
+.icon{
+    width: 32px;
+}
+
+img{
+    width: 600px;
+}
+
+@media screen and (max-width:600px){
+    h2{
+        text-align: center;
+    }
+
+    img{
+        width: 300px;
+    }
+    
+}
