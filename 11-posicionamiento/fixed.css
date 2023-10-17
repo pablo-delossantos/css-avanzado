@@ -8,29 +8,21 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+nav {
+    background: #6951d6;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+}
+
+.elemento-top {
+    margin-top: 70px;
+}
+
 .caja {
     width: 300px;
     height: 300px;
     background: coral;
     margin-bottom: 30px;
-}
-
-.caja:nth-child(1) {
-    background: deepskyblue;
-    position: fixed;
-    z-index: 3;
-    /* bottom: 0;
-    right: 0; */
-    left: 100px;
-}
-
-.caja:nth-child(2) {
-    position: relative;
-    z-index: 2;
-}
-
-.caja:nth-child(5) {
-    position: relative;
-    z-index: 3;
-    background: #000;
 }
